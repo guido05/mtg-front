@@ -1,0 +1,34 @@
+.my-carousel {
+  height: 400px; // o lo que quieras
+  background-color: black;
+
+  .carousel-section {
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.05);
+      z-index: 2;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+      color: #eee;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: rgba(0,0,0,0.7);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="container-fluid my-carousel">
+  <div class="row no-gutters">
+    <div class="col-12 col-md-2 p-0" *ngFor="let img of images">
+      <div class="carousel-section" style="background-image: url(/assets/img1.jpg)">
+        <div class="overlay"
+        (click)="onSelect(img)"
+        (keydown.enter)="onSelect(img)"
+        (keydown.space)="onSelect(img)">
+          <h5>{{ img.title }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

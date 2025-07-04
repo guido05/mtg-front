@@ -1,1 +1,8 @@
-<router-outlet><app-login></app-login></router-outlet>
+<body class="d-flex flex-column min-vh-100 bg-black text-white">
+  <app-navbar></app-navbar>
+  <main class="flex-fill pt-5 mt-3">
+    <router-outlet><app-login></app-login></router-outlet>
+    <app-carousel></app-carousel>
+  </main>
+  <app-footer></app-footer>
+</body>
